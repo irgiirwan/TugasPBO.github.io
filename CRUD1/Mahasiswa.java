@@ -1,6 +1,7 @@
 package CRUD1;
 
 public class Mahasiswa {
+    // field
     private String nim;
     private String nama;
     private String alamat;
@@ -8,6 +9,7 @@ public class Mahasiswa {
     private int sks;
     private double ipk;
 
+    // method constructor
     public Mahasiswa(String nim, String nama, String alamat, int semester, int sks, double ipk) {
         this.nim = nim;
         this.nama = nama;
@@ -17,6 +19,7 @@ public class Mahasiswa {
         this.ipk = ipk;
     }
 
+    // method getter
     public String getNim() {
         return nim;
     }
@@ -41,6 +44,7 @@ public class Mahasiswa {
         return ipk;
     }
 
+    // override toString
     @Override
     public String toString() {
         return "Mahasiswa{" +
